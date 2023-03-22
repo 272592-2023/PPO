@@ -4,14 +4,13 @@
 
 using namespace std;
 
-void drukowanie_studentow (vector<student> &studenci) {
+void drukowanie_studentow (vector<student> studenci) {
 
     cout << "lista studentow: " << endl;
-
-    for(student s : studenci) {
-        cout << "indeks: " << s.indeks << endl;
-        cout << "imie: " << s.imie << endl;
-        cout << "nazwisko: " << s.nazwisko << endl;
+    for (int i=0; i<studenci.size(); i++) {
+        cout << "indeks: " << studenci[i].indeks << endl;
+        cout << "imie: " << studenci[i].imie << endl;
+        cout << "nazwisko: " << studenci[i].nazwisko << endl;
         cout << endl;
     }
 

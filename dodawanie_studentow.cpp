@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void dodawanie_studentow (vector<student> studenci) {
+void dodawanie_studentow (vector<student> &studenci) {
 
     student nowystudent;
 
@@ -14,6 +14,8 @@ void dodawanie_studentow (vector<student> studenci) {
     cin >> nowystudent.imie;
     cout << "Podaj nazwisko: " << endl;
     cin >> nowystudent.nazwisko;
+    cout << "Podaj pesel: " << endl;
+    cin >> nowystudent.pesel;
 
     studenci.push_back(nowystudent);
 

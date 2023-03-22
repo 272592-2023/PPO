@@ -4,4 +4,4 @@
 
 using namespace std;
 
-void dodawanie_studentow(std::vector<student> &studenci); 
+void dodawanie_studentow (vector<student> studenci); 

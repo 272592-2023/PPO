@@ -1,0 +1,9 @@
+wektor wszystkich studentow
+
+klasa student:
+wewnatrz prywatne dane: indeks - indeks studenta, imie - imie studenta, nazwisko - nazwisko studenta, pesel - pesel studenta
+
+klasa studenci:
+wewnatrz klasy prywatne dane: wektor students (wektor klasy student) - przechowywane dane w wektorze: students.indeks, students.imie, students.nazwisko, students.pesel
+
+metody publiczne pozyskujące i przypisujące dane: getIndeks, setIndeks getImie, setImie, getNazwisko, setNazwisko, getPesel, setPesel; wewnatrz setPesel sprawdzenie czy podany w getPesel pesel ma 11 znakow, jesli tak to przypisujemy go i zwracamy 0, a w przeciwnym wypadku zwracamy 1
