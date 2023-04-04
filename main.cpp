@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "klasa_osoba.h"
 #include "studenci.h"
 #include "ui.h"
 
@@ -53,7 +54,7 @@ int main () {
                 s.setIndeks(indeks);
                 studenci.dodajStudenta(s);
                 if (studenci.dodajStudenta(s)==1)
-                    cout << "Student o podanym indeksie juz istnieje!" << endl;
+                    cout << "Nie udalo sie dodac studenta!" << endl;
                     else cout << "Student zostal dodany!" << endl;
                 break;
             }

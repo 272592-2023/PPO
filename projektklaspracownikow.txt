@@ -1,0 +1,39 @@
+klasa_pracownik.h i klasa_pracownik.cpp zawiera class Pracownik z:
+
+    private:
+        int nrKartyPracownika;
+        string imie;
+        string nazwisko;
+        string pesel;
+        int wiek;
+		string stanowisko;
+
+        int sprawdzeniePeselu(string pesel);
+        void obliczanieWieku(string pesel);
+
+    public:
+        int getWiek();
+        int getNrKartyPracownika();
+        string getPesel();
+        string getImie();
+        string getNazwisko();
+
+        void setNrKartyPracownika(int nrKartyPracownika);
+        int setPesel(string pesel);
+        void setImie(string imie);
+        void setNazwisko(string nazwisko);
+		void setStanowisko(string stanowisko);
+
+----------------------
+pracownicy.h i pracownicy.cpp zawiera Class Pracownicy z:
+    
+    private:
+        vector<Pracownik> pracownicy;
+    public:
+        int dodajPracownika(Pracownik p);
+        Pracownik getPracownik(string pesel);
+        Pracownik getPracownik(int nrKartyPracownika);
+        int getLiczbaPracownikow();
+-----------------------
+zmiany w main:
+opcje dodawania i wyszukiwania oraz liczby osob dla pracownikow
