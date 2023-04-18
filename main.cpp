@@ -2,6 +2,7 @@
 #include <vector>
 #include "klasa_osoba.h"
 #include "studenci.h"
+#include "Identifiable.h"
 #include "ui.h"
 
 using namespace std;

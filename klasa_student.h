@@ -2,11 +2,15 @@
 #include <string>
 #include <vector>
 
+#include "klasa_osoba.h"
+
 using namespace std;
 
-class Student {
-    private:
-        int indeks;
+class Student: protected Osoba {
+    
+        virtual string getType()=0;
+        virtual string getId()=0;
+        
         string imie;
         string nazwisko;
         string pesel;
@@ -14,18 +18,14 @@ class Student {
 
         int sprawdzeniePeselu(string pesel);
         void obliczanieWieku(string pesel);
+    
+    private:
+        int indeks;
 
     public:
-        int getWiek();
         int getIndeks();
-        string getPesel();
-        string getImie();
-        string getNazwisko();
 
         void setIndeks(int indeks);
-        int setPesel(string pesel);
-        void setImie(string imie);
-        void setNazwisko(string nazwisko);
 
     
 };
