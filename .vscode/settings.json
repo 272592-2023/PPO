@@ -3,6 +3,8 @@
         "*.php": "php",
         "iostream": "cpp",
         "vector": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xlocale": "cpp",
+        "xlocnum": "cpp"
     }
 }

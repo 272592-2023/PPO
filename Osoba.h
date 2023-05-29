@@ -1,3 +1,6 @@
+#ifndef OSOBA_H
+#define OSOBA_H
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -5,28 +8,32 @@
 
 using namespace std;
 
-class Osoba: public Identifiable {
-        virtual string getType()=0;
-        virtual string getId()=0;
-
+class Osoba {
     protected:
         string imie;
         string nazwisko;
         string pesel;
+        string typ;
+        string id; //indeks lub nr karty pracownika
         int wiek;
 
         int sprawdzeniePeselu(string pesel);
         void obliczanieWieku(string pesel);
 
     public:
-        int getWiek();
-        string getPesel();
         string getImie();
         string getNazwisko();
-
-        int setPesel(string pesel);
+        string getPesel();
+        int getWiek();
+        
         void setImie(string imie);
         void setNazwisko(string nazwisko);
+        int setPesel(string pesel);
 
+        virtual string getType();
+        virtual string getId();
+        virtual string toString();
+        virtual string toStringToPrint();
     
 };
+#endif
